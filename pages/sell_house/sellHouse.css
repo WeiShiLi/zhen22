@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+}
+
+.sell_house{
+    background-image:url("./../../images/sellHouse/banner.jpg") ;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+.sell_house_banner{
+    width: 40%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    padding: 1% ;
+}
+.sell_hr{
+    width: 70%;
+    margin: auto;
+    border: solid 1px #d8d8d8;
+    margin-bottom: 2%;
+}
+.sell_house_banner>div:nth-child(2){
+    font-size: 31px;
+    color: #20A889;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+.sell_house_banner>div:nth-child(3){
+    font-size: 27px;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 1%;
+
+}
+.sell_house_banner>div:nth-child(3)>span:nth-child(2){
+    color: #F16E7E;
+    font-size: 31px;
+}
+.weixin{
+    font-size: 23px;
+    font-weight: 600;
+    color: #555555;
+}
+.sell_btn{
+    width: 30%;
+    background-color: #20A889;
+    color: white;
+    margin: auto;
+    padding: 8px 15px;
+    font-size: 21px;
+    margin-top: 4%;
+    border-radius: 3px;
+}
+.sell_btn:hover{
+    cursor: default;
+    background-color: rgb(0,131,101);
+}
+
+/*icons*/
+.sell_icon{
+    width:75%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*background-color: red;*/
+}
+.icons{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.icons>div:nth-child(2){
+    margin-left: 5%;
+}
+.icons>div:nth-child(2)>p:nth-child(1){
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: 20%;
+    color: #333333;
+}
+.icons>div:nth-child(2)>p:nth-child(2){
+    margin-top: 20px;
+
+}
+@media (max-width: 1300px) {
+    .sell_house_banner{
+        width:50%;
+    }
+    .sell_icon{
+        width:90%;
+        margin-top: 50px;
+    }
+    .sell_house_banner>div:nth-child(2){
+        font-size: 25px;
+
+    }
+    .sell_house_banner>div:nth-child(3){
+        font-size:19px;
+    }
+    .weixin{
+        font-size:19px;
+
+    }
+    .sell_btn{
+        width: 40%;
+    }
+    .icons>div:nth-child(2)>p:nth-child(1){
+        font-weight: 600;
+        font-size: 19px;
+
+    }
+    .icons>div:nth-child(2)>p:nth-child(2){
+        margin-top: 10px;
+        font-size: 15px;
+
+    }
+
+}
+@media (max-width: 1000px) {
+    .sell_house_banner{
+        width: 65%;
+    }
+    .sell_icon{
+        width:90%;
+        margin-top: 50px;
+    }
+    .sell_house_banner>div:nth-child(2){
+        font-size: 25px;
+
+    }
+    .sell_house_banner>div:nth-child(3){
+        font-size:19px;
+    }
+    .weixin{
+        font-size:19px;
+
+    }
+    .sell_btn{
+        width: 40%;
+    }
+    .icons>div:nth-child(2)>p:nth-child(1){
+        font-weight: 600;
+        font-size: 19px;
+
+    }
+    .icons>div:nth-child(2)>p:nth-child(2){
+        margin-top: 10px;
+        font-size: 15px;
+
+    }
+
+
+}

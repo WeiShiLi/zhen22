@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*.search_plus{*/
+    /*background-color: #F4F4F4;*/
+    /*padding: 5px;*/
+/*}*/
+.search_input{
+    background-color: #E5E5E5;
+    padding: 15px 0px;
+}
+.search_input_base{
+    height:45px;
+    display: flex;
+    flex-direction: row;
+
+}
+.search_input_text{
+    padding: 5px 15px;
+    border:  solid 1px #d0d0d0;
+    box-sizing: border-box;
+    width: 40%;
+    border-radius: 2px;
+    background-color: white;
+}
+.search_input_text:hover{
+    border-color: #20A889;
+}
+.search_input_text .search_title_input{
+    height: 100%;
+    width: 100%;
+    border: none;!important;
+    outline: none;!important;
+}
+.search_posi{
+    width: 80%;
+    margin: auto;
+}
+.search_posi_font{
+    font-size: 15px;
+    color: #8c8c8c;
+    padding: 8px 15px;
+}
+.search_font_sousuo{
+    box-sizing: border-box;
+    padding: 3px 15px;
+    line-height: 35px;
+    font-size: 17px;
+    color: white;
+    background-color: #20A889;
+    border: solid 1px #20A889;
+}
+.search_font_sousuo:hover{
+    cursor: default;
+    background-color: #1c9176;
+}
+.search_font_sousuo:active{
+   border-color: #5c60ff;
+}
+/*search type*/
+.search_type{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: white;
+    border:solid 1px gainsboro;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+.search_area_row1{
+    margin-bottom: 15px;
+}
+.search_area_row1>span{
+    padding: 3px 15px;
+    font-size: 15px;
+    display: inline-block;
+    /*background-color: red;*/
+    /*width: 10%;*/
+}
+#totalprice03,#totalprice04{
+    padding-right: 44px;
+}
+#totalprice05,#totalprice06,#totalprice07,#totalprice08{
+    padding-right: 30px;
+}
+#feature02,#feature03{
+    padding-right: 50px;
+}
+.search_area_row1>span:hover{
+    cursor:pointer;
+    color: #20A889;
+}
+.search_area_active{
+    color: #20A889;
+}
+.search_area{
+    font-weight: 600;
+}
+
+/*content title*/
+.body_bg{
+    background-color: #F4F4F4;
+}
+.bg_base{
+    width:80%;
+    background-color: white;
+    margin: auto;
+}
+.bg_base:hover{
+    cursor: default;
+}
+.search_base{
+    border-bottom: solid 2px #20A889;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+.search_title>span{
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.search_sort>span {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 15px;
+}
+.search_title>span:hover,.search_sort>span:hover{
+    cursor: default;
+}
+.title_active{
+    background-color: #20A889;
+    color: white;
+}
+.sort_a{
+    color: #20A889;
+    box-sizing: border-box;
+    border: solid 1px transparent;
+}
+.search_sort{
+    position: relative;
+}
+.sort_hidde{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    padding: 15px 23px;
+    text-align: center;
+    background-color: white;
+    font-size: 13px;
+    border-bottom:solid 1px #EAEAEA ;
+    border-left:solid 1px #EAEAEA ;
+    border-right: solid 1px #EAEAEA;
+    transform: rotateY(-90deg);
+
+    /*background-color: red;*/
+}
+.sort_hidde>p:hover{
+    cursor: default;
+    color: #20A889;
+}
+.img_sort{
+    transform: rotateX(0deg);
+}
+.search_sort:hover .img_sort{
+    transform: rotateX(180deg);
+}
+.search_sort:hover .sort_hidde{
+    transform: rotateY(0deg);
+}
+.search_sort:hover .sort_a{
+    border-left-color: #eaeaea;
+    border-right-color: #EAEAEA;
+}
+
+/*content*/
+.search_total_title{
+    background-color: #F8F8F8;
+    font-size: 15px;
+    color: dimgray;
+    padding: 10px;
+}
+.search_total_title span{
+    font-size: 16px;
+    color: #20A889;
+}
+/*content area*/
+.search_content{
+    background-color: white;
+    border-top: solid 1px #f4f4f4;
+    border-bottom: solid 1px #F4F4F4;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.search_img{
+    width:20%;
+}
+.search_icon{
+    width: 100%;
+    height:100%;
+}
+.search_detail{
+    width: 80%;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.search_name{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.search_name:hover{
+    color: #20A889;
+}
+.search-house{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.search_row1{
+    display: flex;
+    flex-direction: row;
+    /*background-color: red;*/
+    width: 50%;
+}
+.search_row1>div{
+    margin-right: 50px;
+    line-height:30px;
+}
+
+.search-feature{
+    margin-top: 10px;
+}
+.search-feature>span{
+    display: inline-block;
+    padding: 3px 10px;
+    border: solid 1px #20A889;
+    font-size: 15px;
+}
+.search_price{
+    display: flex;
+    flex-direction: row;
+   padding-left: 50px;
+    width: 50%;
+    /*background-color: pink;*/
+    text-align: center;
+    justify-content: space-between;
+}
+.search_price_font{
+    font-size: 25px;
+    color: #F06E7D;
+    margin-right: 20px;
+}
+.search_favorite{
+    /*margin-left: 100px;*/
+    padding-top: 7px;
+    /*margin-right: 20px;*/
+    /*background-color: red;*/
+
+}
+.icon_start{
+    display: inline;
+    float: right;
+}
+.start_{
+    border: solid 1px transparent;
+    padding: 3px 5px;
+    font-size: 13px;
+    /*margin-left:5px;*/
+    /*text-align: right;*/
+    /*background-color: red ;*/
+}
+.start_font{
+    display: inline-block;
+    transform:rotateY(-90deg);
+}
+.start_:hover .start_font{
+    transform:rotateY(0deg);
+}
+.start_:hover{
+    border: solid 1px lightgray;
+    cursor: default;
+}
+
+@media (max-width: 1400px) {
+    .bg_base{
+        width: 90%;
+    }
+    .search_type{
+        width: 90%;
+    }
+   .search_posi{
+      width: 90%;
+    }
+    .search_row1{
+        width: 50%;
+    }
+
+
+}
+@media (max-width: 1220px) {
+    .bg_base{
+        width: 90%;
+    }
+    .search_type{
+        width: 90%;
+    }
+    .search_posi{
+        width: 90%;
+    }
+    .search-house{
+        margin-top: 10px;
+    }
+    .search_row1{
+        width: 50%;
+    }
+    .search_row1>div{
+        margin-right: 30px;
+        line-height:25px;
+    }
+    .search_area_row1>span{
+        padding: 3px 10px;
+        font-size: 13px;
+    }
+    #totalprice03,#totalprice04{
+        padding-right: 35px;
+    }
+    #totalprice05,#totalprice06,#totalprice07,#totalprice08{
+        padding-right: 23px;
+    }
+    #feature02,#feature03{
+        padding-right:35px;
+    }
+}
+@media (max-width: 760px){
+    .bg_base{
+        width: 100%;
+    }
+    .search_type{
+        width: 100%;
+    }
+    .search_posi{
+        width: 100%;
+    }
+}
+
+/*page*/
+.page_css{
+    text-align: center;padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*page*/
+.page_css>div{
+    margin-right: 5px;
+}
+.page_css>div>span{
+    padding: 2px 10px;
+    border: solid 1px lightgrey;
+}
+.page_css>div>span:hover{
+    cursor: pointer;
+    border-color: #20A889;
+}
+.page_active{
+    background-color: #20A889;
+    color: white;
+}
+#page_content>span{
+    margin-right: 3px;
+}
+
+
+/*plus*/
+@media (min-width: 768px) and (max-width: 900px){
+    .search_area_row1>span{
+        padding: 3px 8px;
+        font-size: 15px;
+        display: inline-block;
+    }
+    .search_input_text{
+       padding: 5px 15px;
+        border:  solid 1px #d0d0d0;
+        box-sizing: border-box;
+        width: 60%;
+        border-radius: 2px;
+        background-color: white;
+    }
+
+    #area07, #area08, #totalprice08, #totalprice07{
+        margin-top: 5px;
+    }
+    .bg_base{
+        width: 98%;
+    }
+    .search_type{
+        width: 98%;
+    }
+    .search_posi{
+        width: 98%;
+    }
+    .search_name{
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .search_row1{
+        font-size: 13px;
+    }
+    .search_price_font{
+        font-size: 21px;
+    }
+    .search_price{
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+        width: 50%;
+        /*background-color: pink;*/
+        text-align: center;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+   .search_row1 p{
+       width: 100%;
+
+   }
+
+
+
+
+    
+}

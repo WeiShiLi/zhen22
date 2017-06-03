@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>房间详情页</title>
+    <link rel="stylesheet" href="./../../css/core.min.css">
+    <link rel="stylesheet" href="./house-detail.css">
+    <link rel="stylesheet" href="./../../css/public.css">
+
+    <script src="./house-detail.js"></script>
+
+    <script type="text/javascript">
+       //   1、滚动监听高度
+        function change(x){
+            // x=a b c d e
+            d=document.getElementsByClassName('change-li');
+            c=document.getElementsByClassName('change-a');
+            for (p = d.length; p--;) {
+                if (d[p].id != x) {
+                    d[p].style.backgroundColor = '#FFFFFF';/!*其他*!/
+                    c[p].style.color = '#000000';
+                }
+                else {
+                    d[p].style.backgroundColor = '#009B78';/!*点击的*!/
+                    c[p].style.color = '#FFFFFF ';
+                }
+            }
+            if(x=="a"){
+                window.scrollTo(0,680);
+            }
+            if(x=="b"){
+                window.scrollTo(0,831);
+            }
+            if(x=="c"){
+                window.scrollTo(0,1873);
+            }
+            if(x=="d"){
+                window.scrollTo(0,2324);
+            }
+            if(x=="e"){
+                window.scrollTo(0,2777);
+            }
+        }
+        //   1、点击浮动的导航改变背景色
+        function changeColor(x){
+
+            d=document.getElementsByClassName('change-li');
+            c=document.getElementsByClassName('change-a');
+            for (p = d.length; p--;) {
+                if (d[p].id != x) {
+                    d[p].style.backgroundColor = '#FFFFFF';/!*其他*!/
+                    c[p].style.color = '#000000';
+                }
+                else {
+                    d[p].style.backgroundColor = '#009B78';/!*点击的*!/
+                    c[p].style.color = '#FFFFFF ';
+                }
+            }
+        }
+
+        // 2、到一定高度让导航显示和隐藏
+        window.onscroll=function () {
+            var header = document.getElementById("header");
+            var iDocHeight = document.body.scrollTop;
+            if(iDocHeight < 667){
+                header.style.display = 'none';
+            }else{
+                header.style.display = 'block';
+            }
+
+            if(iDocHeight>680&&iDocHeight<830){  //房源详情
+                changeColor("a");
+            }
+            if(iDocHeight>831&&iDocHeight<1872){  //实勘
+                changeColor("b");
+            }
+            if(iDocHeight>1873&&iDocHeight<2322){   //周边配套
+                changeColor("c");
+            }
+            if(iDocHeight>2324&&iDocHeight<2775){   //街景地图
+                changeColor("d");
+            }
+            if(iDocHeight>2777&&iDocHeight<3053){   //小区信息
+                changeColor("e");
+            }
+        };
+        // 2、带缩略图的 轮播
+
+
+    </script>
+</head>
+<body>
+<div class="padding-left-6 row" style="border-bottom: solid 1px #e8e8e8;padding: 5px 0 10px 0;" >
+    <div class="col xs-6 sm-7 md-8 lg-8 xl-9" style="padding-top: 3px">
+        <img src="./../../images/fangXiaoEr/Wpart1/header_text_new.png">
+    </div>
+    <div class="col xs-5 sm-4 md-3 lg-3 xl-2 font-size-14 text-center"  style="margin-top: 5px;padding-right:5px;border-right: solid 1px gray;">
+        服务热线&nbsp;:&nbsp;400-013-2229&nbsp;
+    </div>
+    <div class="col  xs-1 sm-1 md-1 lg-1 xl-1 font-size-14" style="margin-top: 5px;padding-left: 8px">
+        帮助
+    </div>
+</div>
+<!--nav-->
+<div class="row" style="padding-top: 10px;">
+    <div class="col xs-4 sm-4 md-4 lg-3 xl-3" style="margin-top: 6px;padding-bottom: 2px;padding-left: 6%">
+        <a href="./../../index.html"><img src="./../../images/home/logo.png"></a> <span style="font-size: 14px;color: #909090;margin-left: 7%">郑州</span>
+    </div>
+    <div class="col  xs-2 sm-2 md-1 lg-1 xl-1 text-center W-nav-1" >
+        <a href="./../../index.html" >首页</a>
+    </div>
+    <div class="col xs-1 sm-1 md-1 lg-1 xl-1 text-center W-nav-3" >
+        <span>二手房 <img class="arrow_down" src="./../../images/home/arrow-down.png"></span>
+        <ul class="two_hand_nav">
+            <li><a href="./../searchHouse/searchHouse.html">浏览房源</a></li>
+            <li><a href="./../gufangjia/gufangjia.html"> 估房价</a></li>
+            <li><a href="./../sell_house/sellHouse.html">我要卖房</a></li>
+        </ul>
+    </div>
+    <div class="col xs-1 sm-1 md-1 lg-1 xl-1 text-center W-nav-2" >
+        <a href="./../new-house/new-house.html">新房</a>
+    </div>
+    <div class="col xs-1 sm-1 md-1 lg-1 xl-1 text-center W-nav-2" >
+        <a href="./../loan/loan.html">真易贷</a>
+    </div>
+    <div class="col xs-1 sm-2 md-1 lg-1 xl-1 text-center W-nav-2">
+        <a href="./../page-er/page-2.html">房小二</a>
+    </div>
+    <div class="col xs-1 sm-1 md-1 lg-1 xl-1 text-center W-nav-2" >
+        <a href="./../personInfo/personInfo.html">个人中心</a>
+    </div>
+    <div class="col xs-3 sm-2 md-3 lg-3 xl-3" style="padding-left: 20%;padding-top: 1.3%">
+        <a href="#" style="font-size: 18px;color: #20A889;font-weight: 600">登录</a>
+    </div>
+</div>
+    <!--搜索框-->
+
+   <div class="row" style="background-color: #E5E5E5">
+        <div class="width-90 margin-auto">
+            <div class="col xs-6 sm-6 md-6 lg-6 xl-6">
+                <div class="float-left search-left" style="background-color: white;padding-left: 20px;border: solid 1px white">
+                    <input type="text" class="bg-white border-none font-size-14 search-left-text"  placeholder="输入小区关键字">
+                </div>
+                <div class="search-btn-div">
+                    <button class="border-none float-left text-center color-white search-btn" >搜索</button>
+                </div>
+            </div>
+            <div class="col xs-2 sm-2 md-2 lg-2 xl-2">
+                <button class="font-size-14 search-btn-map" >
+                    <img src="../../images/house-detail/1/map-color.png">&nbsp; 地图找房
+                </button>
+            </div>
+            <div class="col xs-4 sm-4 md-4 lg-4 xl-4 color-pink search-right" >
+                <img src="../../images/house-detail/1/phone.png" style="margin-top: -2px">
+                &nbsp; 真二网APP，买卖二手房的不二“神器”
+            </div>
+        </div>
+
+    </div>
+    <!--内容区-->
+    <div style="background-color: #F2F2F2;" class="padding-bottom-4">
+        <div class="width-90 margin-auto">
+            <div  class="color-darkgray content-header">真二网 > 郑州二手房 > <span id="detail01">金水区</span>二手房 > <span id="detail02">海棠园</span></div>
+            <!--内容区头部 白色区域 收藏房源-->
+            <div class="bg-white border-gainsboro">
+                <div class="row content-slide-header">
+                    <div class="col xs-4 sm-4 md-3 lg-2 xl-2 content-slide-header-left" >房源编号：<span id="detail03">3184827628</span></div>
+                    <div class="col xs-6 sm-5 md-6 lg-7 xl-8 content-slide-header-left" ></div>
+                    <div class="col xs-2 sm-3 md-3 lg-3 xl-2 content-slide-header-right text-center" >
+                        <button class="margin-auto border-gainsboro color-darkgray content-slide-header-btn" >
+                            <img src="../../images/house-detail/1/like2.png" alt="">
+                            &nbsp; 收藏房源
+                        </button>
+                    </div>
+                </div>
+
+                <div class="margin-auto" style="width: 96%">
+                    <div class="row">
+                        <div class="col xs-6 sm-6 md-6 lg-6 xl-6">
+                            <div style="width: 92%;margin: auto">
+                                <!--轮播图-->
+                                <img src="../../images/house-detail/slide/540.362-11.jpg" style="width: 100%">
+                            </div>
+                        </div>
+                        <div class="col xs-6 sm-6 md-6 lg-6 xl-6">
+                            <div class="width-90 margin-auto">
+                                <div>
+                                    <span style="font-size: 27px;" id="detail04">金水&nbsp;</span> <span style="font-size: 25px" id="detail05">海棠园</span>
+                                    <span class="content-slide-right-btn" id="detail06">精品房源</span>
+                                    <span class="content-slide-right-btn" id="detail07">业主委托</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col xs-4 sm-4 md-4 lg-4 xl-4">
+                                        <p class="color-pink content-slide-right-price"><span id="detail08">130</span>万</p>
+                                        <p class="content-slide-color-left" style="padding-bottom: 10%;">单价：<span class="content-slide-color-right" id="detail09">14130元/㎡</span></p>
+                                    </div>
+                                    <div class="col xs-3 sm-3 md-3 lg-3 xl-3" >
+                                        <p class="content-slide-color-left content-slide-right-price1" >首付：<span class="content-slide-color-right" id="detail010">39.0万</span> </p>
+                                        <p class="content-slide-color-left">月供：<span class="content-slide-color-right" id="detail011">4830元</span></p>
+                                    </div>
+                                    <div class="col xs-4 sm-4 md-4 lg-3 xl-3" style="padding-top: 9%;margin-left: 5%">
+                                        <div style="background-color: #f0f0f0;padding: 3% 5.5%">
+                                            <img src="../../images/house-detail/1/calculate.png">
+                                           &nbsp; <span style="font-size: 13px;color: #a1a1a1;">购房计算器</span>
+                                        </div>
+                                    </div>
+                                </div> <!--row-->
+
+                                <div class="row" style="color: #2f2f2f;padding: 2.5% 0">
+                                    <div class="col xs-4 sm-4 md-4 lg-4 xl-3" style="background-color: #F4F4F4;padding: 4% 0">
+                                       <div style="float: left;width: 85%;text-align: right;font-size: 22px;font-weight: 600;padding: 0 18% 0 18%"> <span id="detail012">92</span>㎡</div>
+                                        <div style="float: right;width: 15%;text-align: left;padding-top: 2%">|</div>
+                                    </div>
+                                    <div class="col xs-6 sm-6 md-6 lg-8 xl-8" style="font-size: 22px;font-weight: 600;padding: 4% 0 4% 2%;background-color: #F4F4F4;">
+                                       <span id="detail013"> 2室  2厅 1厨 1卫</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="row" style="border-bottom: solid 1px #e8e8e8">
+                                    <!--table-->
+                                    <div class="col xs-8 sm-8 md-8 lg-8 xl-8" >
+                                        <table style="margin-bottom: 6%">
+                                            <tr >
+                                                <td style="font-size: 14px;color: #4b4b4b;padding-top: 5%"> <span style="color: #868686">楼层：</span> <span id="detail014">4/6 层</span></td>
+                                                <td style="font-size: 14px;color: #4b4b4b;padding-top: 5%"> <span class="content-slide-color-left">年代：</span> <span id="detail015">2003</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 14px;color: #4b4b4b;padding-top: 6.5%"> <span class="content-slide-color-left">朝向：</span> <span id="detail016">暂无数据</span></td>
+                                                <td style="font-size: 14px;color: #4b4b4b;padding-top: 6.5%"> <span class="content-slide-color-left">装修：</span><span id="detail017">暂无数据</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 14px;color: #4b4b4b;padding-top: 6.5%"><span class="content-slide-color-left">电梯：</span><span id="detail018">暂无数据</span></td>
+                                                <td style="font-size: 14px;color: #4b4b4b;padding-top: 6.5%"><span class="content-slide-color-left">楼型：</span> <span id="detail019">板楼 多层</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>  <!--row-->
+
+
+                            </div> <!-- 90% -->
+                        </div><!--简介-->
+                    </div> <!--row-->
+
+                    <div class="row">
+                        <div class="col xs-6 sm-6 md-6 lg-6 xl-6" style="padding: 1.2% 0">
+                            <div class="row">
+                                <div style="float: left;width: 4%;border: solid 1px gainsboro;text-align: center;padding: 5.5% 0;">
+                                    <img src="../../images/house-detail/slide/icon-little-left.png">
+                                </div>
+                                <div style="float: left;width: 92%">
+                                    <div style="width: 100%;margin-left: 2px;overflow: hidden;white-space: nowrap;">
+                                        <img src="../../images/house-detail/slide/117.78-1.jpg" alt="">
+                                        <img src="../../images/house-detail/slide/117.78-2.jpg" alt="">
+                                        <img src="../../images/house-detail/slide/117.78-3.jpg" alt="">
+                                        <img src="../../images/house-detail/slide/117.78-4.jpg" alt="">
+                                        <img src="../../images/house-detail/slide/117.78-5.jpg" alt="">
+                                        <img src="../../images/house-detail/slide/117.78-6.jpg" alt="">
+                                        <img src="../../images/house-detail/slide/117.78-7.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div style="float: right;width: 4%;border: solid 1px gainsboro;text-align: center;padding: 5.5% 0;">
+                                    <img src="../../images/house-detail/slide/icon-little-right.png">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col xs-6 sm-6 md-6 lg-6 xl-6">
+                            <div  class="row width-90 margin-auto content-slide-right-top">
+                                <!--<div>-->
+                                    <div class="col xs-2 sm-2 md-2 lg-2 xl-2">
+                                        <img src="../../images/house-detail/slide/house-circle.png" style="height: 60px;width: 60px;border-radius: 30px">
+                                    </div>
+                                    <div class="col xs-4 sm-4 md-4 lg-3 xl-3">
+                                        <p><span id="detail020">nnnn</span><span style="background-color: #F4F4F4;font-size: 12px;padding: 0 8%;color: #6b6b6b;margin-left: 8%">业主</span> </p>
+                                        <p style="margin: 10% 0 2% 0;background-color: #009B79;color: white;font-size: 13px;width: 90%;text-align: center;padding: 5px 0">
+                                            <img src="../../images/house-detail/slide/icon-chat.png">  与业主聊天
+                                        </p>
+                                    </div>
+                                <!--</div>-->
+                            </div>
+                            <div class="row" style="float: right;color: #6b6b6b;font-size: 12px;padding-top: 3px">举报</div>
+                        </div>
+                    </div>
+                </div> <!--内容区 白色区域 轮播图 简介-->
+            </div><!--内容区头部 白色区域 收藏房源-->
+
+            <!--内容区轮播图下部  导航 广告-->
+            <div style="padding-top: 1%">
+                <!--需要定位的导航内容  开始-->
+                <div id="header">
+                    <div class="row">
+                        <div class="col xs-9 sm-9 md-9 lg-9 xl-9" style="border: solid 1px gainsboro;background-color: white;">
+                            <div style="border-bottom: solid 1px gainsboro">
+                                <ul style="padding: 2% 0 1.5% 0">
+                                    <li class="float-top-li float-top-li1">金水 海棠园</li>
+                                    <li class="float-top-li float-top-li2" >130万</li>
+                                    <li class="float-top-li float-top-li3">2室 2厅 1厨 1卫</li>
+                                    <li class="float-top-li float-top-li4">92㎡</li>
+                                    <li class="float-top-li float-top-li5">
+                                        <button class="float-top-li5-btn">
+                                            <img src="../../images/house-detail/1/like2.png">
+                                            &nbsp; 收藏房源
+                                        </button>
+                                    </li>
+                                    <li class="float-top-li6">
+                                        <img src="../../images/house-detail/slide/icon-chat.png"> 与业主聊天
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <!--需要点击改变背景色的定位的 li -->
+                                <ul style="font-size: 16px;">
+                                    <li onclick="change(this.id)" id="a" class="change-li" style="background-color: #009B78">
+                                        <a href="" class="change-a" style="color: white">房源详情</a>
+                                    </li>
+                                    <li onclick="change(this.id)" id="b" class="change-li">
+                                        <a href="" class="change-a">房小二实勘</a>
+                                    </li>
+                                    <li onclick="change(this.id)" id="c" class="change-li">
+                                        <a href="" class="change-a">周边配套</a>
+                                    </li>
+                                    <li onclick="change(this.id)" id="d" class="change-li">
+                                        <a href="" class="change-a">街景地图</a>
+                                    </li>
+                                    <li onclick="change(this.id)" id="e" class="change-li">
+                                        <a href="" class="change-a">小区信息</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--需要定位的内容  结束-->
+
+                <div class="row">
+                    <div class="col xs-9 sm-9 md-9 lg-9 xl-9">
+
+                        <div style="border: 1px solid gainsboro;background-color: white">
+                            <ul>
+                                <li style="display: inline-block;width: 12%;text-align: center;padding: 2% 0;background-color: #009B78">
+                                    <a href="#F1" style="color: white">房源详情</a>
+                                </li>
+                                <li style="display: inline-block;width: 13%;text-align: center">
+                                    <a href="#F2">房小二实勘</a>
+                                </li>
+                                <li style="display: inline-block;width: 12%;text-align: center">
+                                    <a href="#F3">周边配套</a>
+                                </li>
+                                <li style="display: inline-block;width: 12%;text-align: center">
+                                    <a href="#F4">街景地图</a>
+                                </li>
+                                <li style="display: inline-block;width: 12%;text-align: center">
+                                    <a href="#F5">小区信息</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--房源详情-->
+                        <div id="F1" style="border:1px solid gainsboro;background-color: white;margin-top: 1%">
+                            <div style="border-bottom: solid 1px gainsboro;font-size: 20px;padding: 2% 0 2% 3%">房源详情</div>
+                            <div style="padding: 3% 3%">
+                                <p style="font-size: 12px;color: #009B78">房源描述</p>
+                                <p style="font-size: 14px;padding-top: 1.5%">暂无房源描述</p>
+                            </div>
+                        </div>
+                        <!--房小二实勘-->
+                        <div id="F2" style="background-color: white;margin-top: 1%;border: 1px solid gainsboro;padding-bottom: 3%">
+                            <div  style="border-bottom: solid 1px gainsboro;font-size: 20px;padding: 2% 0 2% 3%">
+                                房小二实勘
+                            </div>
+
+                            <div style="width: 94%;margin: auto">
+                                <!--房小二信息-->
+                                <div class="row" style="padding: 1% 0">
+                                    <div class="col xs-2 sm-2 md-1 lg-1 xl-2" style="">
+                                        <img src="../../images/house-detail/look/head-img.jpg" style="height: 50px;width: 50px;border-radius: 50%;border: 1px solid gainsboro">
+                                    </div>
+                                    <div class="col xs-6 sm-6 md-6 lg-5 xl-5">
+                                        <p style="padding-bottom:3%;font-size: 14px">尚振峰</p>
+                                        <p style="color: #009B78">
+                                            18638529895
+                                            <span style="padding-left: 8%">
+                                            <img src="../../images/house-detail/look/icon-checked.png" alt="">
+                                            <span style="font-size: 12px">该房源已经过房小二实勘</span>
+                                        </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--实勘信息-->
+                                <div style="padding: 3% 0 3% 2%;background-color: #F4F4F4;font-size: 13px">
+                                    <p>
+                                        <img src="../../images/house-detail/look/icon-desc.png" alt="">
+                                        &nbsp;实勘详情 :
+                                    </p>
+                                    <p style="padding: 1% 0 0 3%;color: #939393">房子是双地铁口，一梯两户，南北通透 的房率很高 客厅和卧室都比较大。图为实堪照片</p>
+                                </div>
+                                <!--房间图片-->
+                                <div class="row" style="padding-top: 3%">
+                                    <div class="col xs-6 sm-6 md-6 lg-6 xl-6">
+                                       <div style="width: 90%;position: relative;margin:auto">
+                                           <img src="../../images/house-detail/look/2.jpg" style="width: 100%">
+                                           <div style="position: absolute;bottom: 0;left: 0">
+                                               <p style="background-color: #2f2f2f;color: white;width:50px;height: 30px;font-size: 14px;line-height: 30px;text-align: center">卧室</p>
+                                           </div>
+                                           <div style="position: absolute;bottom: 0;right: 0">
+                                               <img src="../../images/house-detail/look/float-right.png">
+                                           </div>
+
+                                       </div>
+                                    </div>
+                                    <div class="col xs-6 sm-6 md-6 lg-6 xl-6">
+                                        <div style="width: 90%;position: relative;margin: auto">
+                                            <img src="../../images/house-detail/look/3.jpg" alt="" style="width: 100%">
+                                            <div style="position: absolute;bottom: 0;left: 0">
+                                                <p style="background-color: #2f2f2f;color: white;width:50px;height: 30px;font-size: 14px;line-height: 30px;text-align: center">厨房</p>
+                                            </div>
+                                            <div style="position: absolute;bottom: 0;right: 0">
+                                                <img src="../../images/house-detail/look/float-right.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-top: 3%">
+                                    <div class="col xs-6 sm-6 md-6 lg-6 xl-6" style="">
+                                        <div style="width: 90%;position: relative;margin: auto">
+                                            <img src="../../images/house-detail/look/6.jpg" alt="" style="width: 100%">
+                                            <div style="position: absolute;bottom: 0;left: 0">
+                                                <p style="background-color: #2f2f2f;color: white;width:50px;height: 30px;font-size: 14px;line-height: 30px;text-align: center">客厅</p>
+                                            </div>
+                                            <div style="position: absolute;bottom: 0;right: 0">
+                                                <img src="../../images/house-detail/look/float-right.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col xs-6 sm-6 md-6 lg-6 xl-6">
+                                        <div style="width: 90%;margin: auto;position: relative">
+                                            <img src="../../images/house-detail/look/4.jpg" alt="" style="width: 100%">
+                                            <div style="position: absolute;bottom: 0;left: 0">
+                                                <p style="background-color: #2f2f2f;color: white;width:50px;height: 30px;font-size: 14px;line-height: 30px;text-align: center">卧室</p>
+                                            </div>
+                                            <div style="position: absolute;bottom: 0;right: 0">
+                                                <img src="../../images/house-detail/look/float-right.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-top: 3%">
+                                    <div class="col xs-6 sm-6 md-6 lg-6 xl-6" style="">
+                                        <div style="width: 90%;margin: auto;position: relative">
+                                            <img src="../../images/house-detail/look/5.jpg" alt="" style="width: 100%">
+                                            <div style="position: absolute;bottom: 0;left: 0">
+                                                <p style="background-color: #2f2f2f;color: white;width:50px;height: 30px;font-size: 14px;line-height: 30px;text-align: center">卫生间</p>
+                                            </div>
+                                            <div style="position: absolute;bottom: 0;right: 0">
+                                                <img src="../../images/house-detail/look/float-right.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col xs-6 sm-6 md-6 lg-6 xl-6">
+                                        <div style="width: 90%;margin: auto;position: relative">
+                                            <img src="../../images/house-detail/look/1.jpg" alt="" style="width: 100%">
+                                            <div style="position: absolute;bottom: 0;left: 0">
+                                                <p style="background-color: #2f2f2f;color: white;width:50px;height: 30px;font-size: 14px;line-height: 30px;text-align: center">平面图</p>
+                                            </div>
+                                            <div style="position: absolute;bottom: 0;right: 0">
+                                                <img src="../../images/house-detail/look/float-right.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--周边配套-->
+                        <div id="F3" style="border:1px solid gainsboro;background-color: white;margin-top: 1%">
+                            <div style="border-bottom: solid 1px gainsboro;font-size: 20px;padding: 2% 0 2% 3%">周边配套</div>
+                            <div style="padding: 2% 3%">
+                                <img src="../../images/house-detail/look/map.png" alt="" style="width: 100%">
+                            </div>
+                        </div>
+                        <!--街景地图-->
+                        <div id="F4" style="border:1px solid gainsboro;background-color: white;margin-top: 1%">
+                            <div style="border-bottom: solid 1px gainsboro;font-size: 20px;padding: 2% 0 2% 3%">街景地图</div>
+                            <div style="padding: 2% 3%">
+                                <img src="../../images/house-detail/look/street.png" alt="" style="width: 100%">
+                            </div>
+                        </div>
+                        <!--小区信息-->
+                        <div id="F5" style="border:1px solid gainsboro;background-color: white;margin-top: 1%">
+                            <div style="border-bottom: solid 1px gainsboro;font-size: 20px;padding: 2% 0 2% 3%">小区信息</div>
+                            <div style="padding: 2% 3%">
+                                <div style="font-size: 14px;">
+                                   <span style="color: #6b6b6b">县 &nbsp;&nbsp;&nbsp; 区：</span> 惠济
+                                    <span style="color: #6b6b6b;padding-left: 30%">产权年限：</span>70年
+                                </div>
+                                <div style="font-size: 14px;padding-top: 2%">
+                                    <span style="color: #6b6b6b">物 业 费：</span>0.35元/平方米·月
+                                    <span style="color: #6b6b6b;padding-left: 20%">建筑类别：</span>塔楼 多层
+                                </div>
+                                <div style="color: #009B78;padding-top: 4%;font-size: 14px;border-bottom: 1px solid gainsboro;padding-bottom: 2%">
+                                    小区介绍：
+                                </div>
+                                <p style="font-size: 13px;color: #6b6b6b;line-height: 20px;padding: 1.5% 0 3% 0">
+                                    1、郑州北区最优性价比社区； 2、郑州市稀有多层社区； 3、85-89%得房率； 4、小进深，大面宽，为郑州市少有。户型进深只有11.1米，实用简约，避免浪费，健康户型，采光通风比较好； 5、楼间距达到26米。
+                                    6、户型：二居室，三居室
+                                    7、项目规模：30
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                        <!--同价位真实二手房推荐-->
+                        <div style="border:1px solid gainsboro;background-color: white;margin-top: 1%;padding-bottom: 3%">
+                            <div style="border-bottom: solid 1px gainsboro;font-size: 20px;padding: 2% 0 2% 3%">同价位真实二手房推荐</div>
+                            <div class="row" style="padding: 2% 3%">
+                                <div class="col xs-3 sm-3 md-3 lg-3 xl-3" style="color: #6b6b6b">
+                                    <div style="width: 94%;margin: auto">
+                                        <img src="../../images/house-detail/look/same3.jpg" alt="" style="width: 100%">
+                                        <p style="padding: 8% 0 5% 0;font-size: 14px;">
+                                            <span>金水 豫森城</span>
+                                            <span style="float: right;color: #F06E7D;">126万</span>
+                                        </p>
+                                        <p style="font-size: 12px">
+                                            <span>2室 2厅</span>
+                                            <span style="float: right">66㎡</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col xs-3 sm-3 md-3 lg-3 xl-3" style="color: #6b6b6b">
+                                    <div style="width: 94%;margin: auto">
+                                        <img src="../../images/house-detail/look/default.jpg" alt="" style="width: 100%">
+                                        <p style="padding: 8% 0 5% 0;font-size: 14px;">
+                                            <span>金水 瀚海艾特中心</span>
+                                            <span style="float: right;color: #F06E7D;">133万</span>
+                                        </p>
+                                        <p style="font-size: 12px">
+                                            <span>1室 1厅</span>
+                                            <span style="float: right">110㎡</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="col xs-3 sm-3 md-3 lg-3 xl-3" style="color: #6b6b6b">
+                                    <div style="width: 94%;margin: auto">
+                                        <img src="../../images/house-detail/look/same2.jpg" alt="" style="width: 100%">
+                                        <p style="padding: 8% 0 5% 0;font-size: 14px;">
+                                            <span>金水 天伦水晶城</span>
+                                            <span style="float: right;color: #F06E7D;">128万</span>
+                                        </p>
+                                        <p style="font-size: 12px">
+                                            <span>2室 2厅</span>
+                                            <span style="float: right">96㎡</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="col xs-3 sm-3 md-3 lg-3 xl-3" style="color: #6b6b6b">
+                                    <div style="width: 94%;margin: auto">
+                                        <img src="../../images/house-detail/look/same.jpg" alt="" style="width: 100%">
+                                        <p style="padding: 8% 0 5% 0;font-size: 14px;">
+                                            <span>金水 中方园（东区）</span>
+                                            <span style="float: right;color: #F06E7D;">131万</span>
+                                        </p>
+                                        <p style="font-size: 12px">
+                                            <span>3室 2厅</span>
+                                            <span style="float: right">117㎡</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--同小区房源推荐-->
+                        <div style="border:1px solid gainsboro;background-color: white;margin-top: 1%;padding-bottom: 3%">
+                            <div style="border-bottom: solid 1px gainsboro;font-size: 20px;padding: 2% 0 2% 3%">同小区房源推荐</div>
+                            <div class="row" style="padding: 2% 3%">
+                                <div class="col xs-3 sm-3 md-3 lg-3 xl-3" style="color: #6b6b6b">
+                                    <div style="width: 94%;margin: auto">
+                                        <img src="../../images/house-detail/look/same22.jpg" alt="" style="width: 100%">
+                                        <p style="padding: 8% 0 5% 0;font-size: 14px;">
+                                            <span>金水 海棠园</span>
+                                            <span style="float: right;color: #F06E7D;">102万</span>
+                                        </p>
+                                        <p style="font-size: 12px">
+                                            <span>2室 1厅</span>
+                                            <span style="float: right">89㎡</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col xs-3 sm-3 md-3 lg-3 xl-3" style="color: #6b6b6b">
+                                    <div style="width: 94%;margin: auto">
+                                        <img src="../../images/house-detail/look/same11.jpg" alt="" style="width: 100%">
+                                        <p style="padding: 8% 0 5% 0;font-size: 14px;">
+                                            <span>金水 海棠园</span>
+                                            <span style="float: right;color: #F06E7D;">120万</span>
+                                        </p>
+                                        <p style="font-size: 12px">
+                                            <span>3室 1厅</span>
+                                            <span style="float: right">110㎡</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="col xs-3 sm-3 md-3 lg-3 xl-3" style="color: #6b6b6b">
+                                    <div style="width: 94%;margin: auto">
+                                        <img src="../../images/house-detail/look/default.jpg" alt="" style="width: 100%">
+                                        <p style="padding: 8% 0 5% 0;font-size: 14px;">
+                                            <span>金水 海棠园</span>
+                                            <span style="float: right;color: #F06E7D;">86万</span>
+                                        </p>
+                                        <p style="font-size: 12px">
+                                            <span>2室 1厅</span>
+                                            <span style="float: right">76㎡</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--热门新房楼盘推荐-->
+                        <div style="border:1px solid gainsboro;background-color: white;margin-top: 1%;padding-bottom: 3%">
+                            <div style="border-bottom: solid 1px gainsboro;font-size: 20px;padding: 2% 0 2% 3%">同价位真实二手房推荐</div>
+                            <div class="row" style="padding: 2% 3%">
+                                <div class="col xs-3 sm-3 md-3 lg-3 xl-3">
+                                    <div style="width: 94%;margin: auto">
+                                        <div style="position: relative">
+                                            <img src="../../images/new-house/house1.jpg" alt="" style="width: 100%">
+                                            <span style="position: absolute;bottom:2%;right: 0;height: 18%;width: 55%;padding: 3% 0 3% 5%;background-color: #009B78;color: white;font-size: 12px">均价7500元/㎡</span>
+                                        </div>
+                                        <p style="padding: 10% 0 5% 0;font-size: 14px">鑫苑二七鑫中心</p>
+                                        <p style="font-size: 12px;color: #6b6b6b">45.00㎡-130.30㎡</p>
+                                    </div>
+                                </div>
+
+                                <div class="col xs-3 sm-3 md-3 lg-3 xl-3">
+                                    <div style="width: 94%;margin: auto">
+                                        <div style="position: relative">
+                                            <img src="../../images/new-house/house2.jpg" alt="" style="width: 100%">
+                                            <span style="position: absolute;bottom:2%;right: 0;height: 18%;width: 55%;padding: 3% 0 3% 5%;background-color: #009B78;color: white;font-size: 12px">
+                                                均价16500元/㎡
+                                            </span>
+                                        </div>
+                                        <p style="padding: 10% 0 5% 0;font-size: 14px">
+                                            物华国际
+                                        </p>
+                                        <p style="font-size: 12px;color: #6b6b6b">39.17㎡-141.86㎡</p>
+                                    </div>
+                                </div>
+
+                                <div class="col xs-3 sm-3 md-3 lg-3 xl-3">
+                                        <div style="width: 94%;margin: auto">
+                                            <div style="position: relative">
+                                                <img src="../../images/new-house/house3.jpg" alt="" style="width: 100%">
+                                                <span style="position: absolute;bottom:2%;right: 0;height: 18%;width: 55%;padding: 3% 0 3% 5%;background-color: #009B78;color: white;font-size: 12px">
+                                                均价7500元/㎡
+                                            </span>
+                                            </div>
+                                            <p style="padding: 10% 0 5% 0;font-size: 14px">
+                                                物华国际浩创梧桐春晓
+                                            </p>
+                                            <p style="font-size: 12px;color: #6b6b6b">79.00㎡-124.00㎡</p>
+                                        </div>
+                                </div>
+
+                                <div class="col xs-3 sm-3 md-3 lg-3 xl-3">
+                                    <div style="width: 94%;margin: auto">
+                                        <div style="position: relative">
+                                            <img src="../../images/new-house/house4.jpg" alt="" style="width: 100%">
+                                            <span style="position: absolute;bottom:2%;right: 0;height: 18%;width: 55%;padding: 3% 0 3% 5%;background-color: #009B78;color: white;font-size: 12px">
+                                                均价4800元/㎡
+                                            </span>
+                                        </div>
+                                        <p style="padding: 10% 0 5% 0;font-size: 14px">
+                                            密登堡
+                                        </p>
+                                        <p style="font-size: 12px;color: #6b6b6b">101.27㎡-125.09㎡</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--推荐房源-->
+                    <div class="col xs-3 sm-3 md-3 lg-3 xl-3">
+
+                        <div style="width: 96%;border-bottom: 1px solid gainsboro;background-color: white;margin-left: 4%">
+                            <div style="padding: 6% 6%;border-bottom: 1px solid gainsboro">
+                                推荐房源
+                                <span style="float: right;font-size: 12px;color: #636363">更多</span>
+                            </div>
+                            <div style="width: 78%;margin: auto">
+                                <div style="border-bottom: 1px solid gainsboro;padding:8% 0 3% 0">
+                                    <div style="text-align: center;">
+                                        <img src="../../images/house-detail/recommend/1.jpg" style="width: 100%">
+                                    </div>
+                                    <div>
+                                        <p style="padding: 8% 2% 0 2%">
+                                            <span style="font-size: 14px">金水 豫森城</span>
+                                            <span style="float: right;color: #F06E7D;font-size: 14px">81万</span>
+                                        </p>
+
+                                        <p style="padding: 4% 2% 8% 2%;color: #6b6b6b">
+                                            <span style="font-size: 12px">2室 2厅</span>
+                                            <span style="float: right;font-size: 12px">66㎡</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div style="border-bottom: 1px solid gainsboro;padding:8% 0 3% 0">
+                                    <div style="text-align: center;">
+                                        <img src="../../images/house-detail/recommend/2.jpg" style="width: 100%">
+                                    </div>
+                                    <div>
+                                        <p style="padding: 8% 2% 0 2%">
+                                            <span style="font-size: 14px">金水 裕华美晨</span>
+                                            <span style="float: right;color: #F06E7D;font-size: 14px">120万</span>
+                                        </p>
+
+                                        <p style="padding: 4% 2% 8% 2%;color: #6b6b6b">
+                                            <span style="font-size: 12px">3室 2厅</span>
+                                            <span style="float: right;font-size: 12px">106㎡</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div style="padding:8% 0 3% 0">
+                                    <div style="text-align: center;">
+                                        <img src="../../images/house-detail/recommend/3.jpg" style="width: 100%">
+                                    </div>
+                                    <div>
+                                        <p style="padding: 8% 2% 0 2%">
+                                            <span style="font-size: 14px">金水 明苑人家</span>
+                                            <span style="float: right;color: #F06E7D;font-size: 14px">175万</span>
+                                        </p>
+
+                                        <p style="padding: 4% 2% 8% 2%;color: #6b6b6b">
+                                            <span style="font-size: 12px">4室 2厅</span>
+                                            <span style="float: right;font-size: 12px">166㎡</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--广告-->
+                        <div style="width: 96%;margin-left: 4%;text-align: center">
+                            <div style="padding: 10% 0">
+                                <img src="../../images/house-detail/recommend/adv1.jpeg" width="100%">
+                            </div>
+                            <div>
+                                <img src="../../images/house-detail/recommend/adv2.jpeg" width="100%">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--底部-->
+    <!--页脚===part8-->
+
+<!--页脚===part8-->
+<div class="footer">
+    <div class="row home_footer_bg">
+        <div class="col xs-8 sm-8 md-8 lg-8 xl-8   home_footer">
+            <ul class="footer_ul">
+                <li id="footer1" class="footer_li footer_current">热门区域</li>
+                <li id="footer2" class="footer_li">热门小区</li>
+                <li class="footer_li">友情链接</li>
+            </ul>
+
+            <div class="footer_content1   _show footer_show">
+                <span>金水区二手房</span>
+                <span>中原区二手房</span>
+                <span>二七区二手房</span>
+                <span>管城区二手房</span>
+                <span>郑东新区二手房</span>
+                <span> 惠济区二手房</span>
+                <span>高新区二手房</span>
+                <span>经济开发区二手房</span>
+                <span>中牟二手房</span>
+                <span>周边县市二手房</span>
+            </div>
+            <div class="footer_content2   _hidde footer_show">
+                <span>德润黄金海岸</span>
+                <span>升龙凤凰城</span>
+                <span>利海托斯卡纳</span>
+                <span>富田太阳城</span>
+                <span>中原新城</span>
+                <span>升龙国际中心</span>
+                <span>曼哈顿</span>
+                <span>水岸鑫城</span>
+                <span>财信圣堤亚纳</span>
+                <span>远大理想城</span>
+            </div>
+
+        </div>
+
+        <div class="col xl-2 xs-2 sm-2 md-2 lg-2 footer_img">
+            <img src="./../../images/home/part8/video.png" class="footer_img1 img_ma" />
+            <img src="./../../images/home/part8/video_hover.png"class="footer_img1_hover img_ma"/></div>
+        <div class="col xl-2 xs-2 sm-2 md-2 lg-2 ">
+            <img src="./../../images/home/part8/weixinqu.png" class="img_ma"/>
+        </div>
+    </div>
+</div>
+
+<div class="row footer_copy">
+    <div class="col xs-12 sm-12 md-12 lg-12 xl-12 ">
+        <div class="f_p1">
+            <ul class="f_p_ul">
+                <li>关于我们</li>
+                <li>服务条款</li>
+                <li>真二招聘</li>
+                <li>版权声明</li>
+                <li> 投诉建议邮箱:ceo@zhen22.com</li>
+                <li style="border-right: solid 0px"> 服务电话：400-013-2229（周一至周日 9：00-19：30）</li>
+            </ul>
+        </div>
+
+        <p class="f_p2">
+            Copyright@2014 - 2017 Real Second Hand.All Rigts Reserved
+        </p>
+        <p class="f_p3">
+            真二（深圳）房产经纪有限公司版权所有
+        </p>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.per_bg{
+    width: 100%;
+    background-color: #F4F4F4;
+    padding-bottom: 2%;
+}
+.per_posi{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+}
+.per_left{
+    width: 22%;
+    background-color:white;
+    padding-top: 3%;
+    padding-bottom: 400px;
+}
+.per-face{
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+.default_face{
+    border-radius: 50%;
+    margin-bottom: 10%;
+}
+.per_edit_img{
+    display: inline-block;
+    padding: 0 10px ;
+    color: #767676;
+}
+.per_edit_img_{
+    border-right: solid 2px #eeeeee;
+}
+.per_edit_img:hover{
+    color: #009C79;
+    cursor: default;
+}
+
+.per_nav_content{
+    box-sizing: border-box;
+    width: 100%;
+    border-top: solid 1px #ececec;
+    padding: 6% 13%;
+    color: #4d4d4d;
+}
+.per_nav_content:hover{
+    cursor: pointer;
+    color:#009C79 ;
+}
+.er_fang{
+    border-bottom: solid 1px #ececec;
+}
+.per_active{
+    color:#009C79 ;
+}
+
+.per_right{
+    box-sizing: border-box;
+    width:78%;
+    background-color:white;
+    margin-left: 2%;
+    padding: 3% 5% 10% 3%;
+}
+/*perInfo*/
+.my_info{
+    font-size: 19px;
+    margin-bottom: 4%;
+}
+.my_say{
+    display: inline-block;
+    padding: 1% 5%;
+    background-color: #f7f7f7;
+    color:#009C79 ;
+}
+.my_name{
+    margin-top: 3%;
+}
+.my_name input{
+    height: 100%;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.my_name>span{
+    display: inline-block;
+}
+.my_name>span:nth-child(2){
+    height: 30px;
+    border: solid 1px #eeeeee;
+    padding-left: 1%;
+    width: 35%;
+}
+.my_name>span:nth-child(1){
+    line-height: 30px;
+    margin-right: 2%;
+    letter-spacing: 2px;
+    /*text-align: justify;*/
+    box-sizing: border-box;
+}
+.my_sex{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.sex_{
+    letter-spacing: 2px;
+    margin-right: 3%;
+}
+.sex_input{
+    margin-right: 10%;
+    position: relative;
+}
+.sex_input input{
+    width: 25px;
+    height:25px;
+    margin-bottom: -20px;
+
+}
+.sexs{
+    position: absolute;
+    right: -30px;
+    top: 0;
+
+}
+.my_phone{
+    margin-top: 3%;
+}
+.my_phone>span:nth-child(1){
+    line-height: 30px;
+    margin-right: 2%;
+    letter-spacing: 2px;
+    /*text-align: justify;*/
+    box-sizing: border-box;
+}
+.my_phone input{
+    height: 30px;
+    width: 35%;
+
+    border: none;
+    background-color: #eeeef5;
+}
+.phone_say{
+    font-size: 13px;
+    color: #b4b4b4;
+}
+.phone_say span{
+    color: #20A889;
+}
+.my_wechat{
+    margin-top: 5%;
+}
+.my_wechat span{
+    display: inline-block;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+.my_wechat span:hover{
+    cursor: default;
+}
+.my_wechat span:nth-child(3){
+    background-color: gainsboro;
+    padding:0 1%;
+}
+.my_wechat span:nth-child(4){
+    color: #20A889;
+}
+.bind_{
+    color: #989898;
+    font-size: 13px;
+}
+.my_save{
+    color: white;
+    background-color: #009C79;
+    width: 35%;
+    margin-top:10%;
+    padding-top: 2%;
+    padding-bottom:2%;
+    text-align: center;
+}
+@media (max-width: 1200px) {
+    .per_posi{
+        width: 95%;
+    }
+
+}
+@media (max-width: 900px) {
+    .info_two{
+        font-size: 13px;
+    }
+
+    .per_nav_content{
+
+        padding: 10% 13%;
+
+    }
+    .per_posi{
+        width: 100%;
+    }
+
+
+}

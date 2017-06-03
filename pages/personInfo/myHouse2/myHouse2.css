@@ -1,0 +1,122 @@
+.my_house2{
+    font-size: 19px;
+    margin-bottom: 4%;
+}
+.own_say{
+    display: flex;
+    flex-direction: row;
+}
+.own_say>div:nth-child(2){
+    line-height: 42px;
+    margin-left: 2%;
+    color: #6c6c6c;
+    font-size: 15px;
+}
+.select_say{
+    color: #6c6c6c;
+    margin-top: 2%;
+    font-size: 15px;
+}
+.select_area{
+    margin-top: 4%;
+    width: 20%;
+    padding: 1% 2%;
+    font-size: 17px;
+    margin-bottom: 4%;
+}
+.plus_empty{
+    width: 100%;
+    padding-top: 2%;
+    background-color: gray;
+}
+.select_btn{
+    width: 30%;
+    padding: 2%;
+    text-align: center;
+    color: white;
+    background-color: #009C79;
+    border-radius: 3px;
+}
+.select_btn:hover{
+    cursor: default;
+}
+.house2_title{
+    margin-top: 6%;
+}
+.ex_title{
+    width: 100%;
+}
+.sell_base{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+    border-bottom: solid 1px green;
+    padding-bottom: 20px;
+}
+.sell_base>div:nth-child(1){
+    width: 5%;
+    margin-right: 5%;
+    /*background-color: red;*/
+}
+.sell_base>div:nth-child(2){
+    width: 90%;
+    /*background-color: pink;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sell_base>div:nth-child(2)>div{
+    width: 23%;
+    margin-right: 2%;
+    background-color: #F9FAFC;
+}
+.photo_icon1{
+    position: relative;
+    width: 100%;
+}
+.photo_img{
+    width:30%;
+    margin: auto;
+    background-color: #F9FAFC;
+    margin-top: -22px;
+    margin-bottom:5px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2%;
+}
+.photo_{
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.free_img{
+    position: absolute;
+    right: 0;
+    top: -7px;
+}
+.photo_1{
+    width: 100%;
+    font-size:11px;
+    text-align: center;
+    color: #676767;
+    margin-top: 5px;
+}
+.icon_free{
+    width:80%;height: auto
+}
+
+@media (max-width: 1200px) {
+
+    .icon_free{
+        width:70%;height: auto
+    }
+    .free_img{
+        top:-5px;
+        right: -10px;
+    }
+}
+.buy_bottom{
+    border-bottom: solid 1px transparent;
+}
+

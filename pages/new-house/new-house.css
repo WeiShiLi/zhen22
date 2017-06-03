@@ -1,0 +1,228 @@
+.recommend-padding{
+    padding: 5% 0 5% 0;
+}
+
+
+
+
+
+
+/*轮播*/
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    20% {
+        opacity: 0.2; /*中间状态 透明度为0*/
+    }
+    40% {
+        opacity: 0.4; /*中间状态 透明度为0*/
+    }
+    60% {
+        opacity: 0.6; /*中间状态 透明度为0*/
+    }
+    80% {
+        opacity: 0.8; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+.fadein{
+    animation-name: fadeIn; /*动画名称*/
+    animation-duration: 2s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 0s; /*延迟时间*/
+}
+.banner_posi{
+    position: relative;
+}
+.banner_cirl{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 30px;
+    display: inline-block;
+    left: 45%;
+}
+.cirl_li{
+    background-color: white;
+}
+.banner_cirl li{
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.banner_active{
+    background-color: #009170;
+}
+
+/*表单和轮播图*/
+.form-content{
+    text-align: center;
+    background-color: white;
+    padding-bottom: 8.8%; /*控制表单的高度*/
+}
+.form-title{
+    padding-top: 9%;
+    padding-bottom: 8%;
+}
+.form-row{
+    width: 82%;
+    margin: auto;
+    border: solid 1px #d6d6d6;
+    background-color: white;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.form-row-top{
+    margin-top: 6%;
+}
+.form-font{
+    text-align: left;
+    padding-left: 5%;
+    color: #6b6b6b;
+}
+.form-btn{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 34%;
+    padding-right: 34%;
+    background-color: #009B78;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+/*新盘推荐*/
+.new-recommend-img{
+    width: 48%;
+    margin-right: 2%;
+}
+.new-text-div{
+    margin: 4% 0 4% 0;
+}
+.new-area-size{
+    margin-right: 2%;
+    font-size: 15px;
+}
+.new-area-price{
+    font-size: 19px;
+    padding-top: 8%;
+}
+
+
+/*看房团*/
+.look-content{
+    background-color: white;
+    padding-bottom: 2.5%; /*控制看房团的高度*/
+}
+.look-title{
+    padding-top: 6%;
+    padding-bottom: 5%;
+    padding-left: 6%;
+    font-size: 24px;
+}
+.look-small-title{
+    font-size: 16px;
+    color: #3f3f3f;
+}
+.look-small-price{
+    font-size: 12px;
+    color: darkgray;
+    padding-top: 10%;
+}
+.look-small-discount{
+    font-size: 14px;
+    padding-top: 10%;
+    color: #F06E7D;
+}
+.look-btn-p{
+    padding-top: 10%;
+    font-size: 14px;
+}
+.look-btn{
+    border: solid 1px #F06E7D;
+    color:#F06E7D;
+    padding:3.6% 18%;
+}
+
+/*热门楼盘*/
+.hot-div{
+    width: 92%;
+    margin: auto;
+    padding-left: 2%;
+}
+.hot-price{
+    padding-top: 11%;
+    padding-bottom: 9%;
+    font-size: 14px;
+    color: #F06E7D;
+}
+
+@media  (max-width: 1024px) {
+    /*表单和轮播图*/
+    .form-content{
+        text-align: center;
+        background-color: white;
+        padding-bottom: 8%;
+    }
+    .form-title{
+        padding-top: 5%;
+        padding-bottom: 4%;
+    }
+    .form-row-top{
+        margin-top: 5%;
+    }
+
+
+
+
+
+    /*看房团*/
+    .look-content{
+        background-color: white;
+        padding-bottom: 1%;
+    }
+
+    .look-small-title{
+        font-size: 14px;
+        color: #3f3f3f;
+    }
+    .look-small-price{
+        font-size: 8px;
+        color: darkgray;
+        /*padding-top: 8%;*/
+    }
+    .look-small-discount{
+        font-size: 10px;
+        /*padding-top: 10%;*/
+        color: #F06E7D;
+    }
+    .look-btn-p{
+        /*padding-top: 10%;*/
+        font-size: 10px;
+    }
+    .look-btn{
+        border: solid 1px #F06E7D;
+        color:#F06E7D;
+        padding:3% 18%;
+    }
+}
+
+
+
+
+
+
+
+/* 3万抵5万   定位*/
+.float-img{
+    /*width: 100%;*/
+    background: url("../../images/new-house/float.png") no-repeat center center;
+    /*height: 100%;*/
+    position: absolute;
+    top: 15px;left: 0;
+}

@@ -1,0 +1,77 @@
+.my_coll{
+    font-size: 19px;
+    margin-bottom: 4%;
+}
+/*collection*/
+.my_collect ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.my_collect ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1% 3%;
+    width: 16.6%;
+    font-size: 19px;
+    text-align: center;
+}
+.my_collect ul li:hover{
+    cursor: pointer;
+}
+.coll_b{
+    border-bottom: solid 1px lightgray;
+}
+
+.coll_active{
+    border: solid 1px lightgray;
+    border-bottom: solid 1px transparent;!important;
+}
+.myColl_content{
+    display: flex;
+    flex-direction: row;
+    width: 78%;
+    margin:auto;
+    padding: 10px 45px;
+    /*border-bottom: solid 1px #d7d7d7;*/
+    border-bottom: dashed 1px #d7d7d7;
+}
+.coll_name{
+    font-size: 19px;
+    padding-left: 20px;
+    /*line-height: 70px;*/
+    width: 26%;
+}
+
+.start_coll{
+    border: solid 1px #e6e6e6;
+    padding: 3px 5px;
+    font-size: 13px;
+    width: 100%;
+    /*margin-left:5px;*/
+    /*text-align: right;*/
+    /*background-color: red ;*/
+}
+.coll_fav_font{
+    width: 40%;text-align: center;font-size: 29px;color: #F06E7D
+}
+.fav_coll{
+    width: 17%;text-align: center
+}
+.start_coll:hover{
+    border-color:  #F06E7D;
+    color:  #F06E7D;
+    cursor: default;
+}
+@media (max-width: 850px) {
+    .my_collect ul{
+
+    }
+    .my_collect ul li{
+        font-size: 15px;
+        width:30%;
+
+    }
+
+    
+}

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>房小二</title>
+
+    <link rel="stylesheet" href="../../css/core.min.css">
+    <link rel="stylesheet" href="page-2.css">
+    <link rel="stylesheet" href="../../css/public.css">
+    <script src="./page-er.js"></script>
+</head>
+<body>
+<!--第一行-->
+<div class="padding-left-6 row" style="border-bottom: solid 1px #e8e8e8;padding: 5px 0 10px 0;" >
+    <div class="col xs-6 sm-7 md-8 lg-8 xl-8" style="padding-top: 3px">
+        <img src="./../../images/fangXiaoEr/Wpart1/header_text_new.png">
+    </div>
+    <div class="col xs-5 sm-4 md-3 lg-3 xl-3 font-size-14 text-center"  style="margin-top: 5px;padding-right:5px;border-right: solid 1px gray;">
+        服务热线&nbsp;:&nbsp;400-013-2229&nbsp;
+    </div>
+    <div class="col  xs-1 sm-1 md-1 lg-1 xl-1 font-size-14" style="margin-top: 5px;padding-left: 8px">
+        帮助
+    </div>
+</div>
+
+<!--nav-->
+<div class="row" style="padding-top: 10px;">
+    <div class="col xs-4 sm-4 md-4 lg-3 xl-3" style="margin-top: 6px;padding-bottom: 2px;padding-left: 6%">
+        <img src="./../../images/home/logo.png"> <span style="font-size: 14px;color: #909090;margin-left: 7%">郑州</span>
+    </div>
+    <div class="col  xs-2 sm-2 md-1 lg-1 xl-1 text-center W-nav-1" >
+        <a href="" style="color: #23b694">首页</a>
+    </div>
+    <div class="col xs-1 sm-1 md-1 lg-1 xl-1 text-center W-nav-3" >
+        <span>二手房 <img class="arrow_down" src="./../../images/home/arrow-down.png"></span>
+        <ul class="two_hand_nav">
+            <li><a href="./../searchHouse/searchHouse.html">浏览房源</a></li>
+            <li><a href="./../gufangjia/gufangjia.html"> 估房价</a></li>
+            <li><a href="./../sell_house/sellHouse.html">我要卖房</a></li>
+        </ul>
+    </div>
+    <div class="col xs-1 sm-1 md-1 lg-1 xl-1 text-center W-nav-2" >
+        <a href="./../new-house/new-house.html">新房</a>
+    </div>
+    <div class="col xs-1 sm-1 md-1 lg-1 xl-1 text-center W-nav-2" >
+        <a href="./../loan/loan.html">真易贷</a>
+    </div>
+    <div class="col xs-1 sm-2 md-1 lg-1 xl-1 text-center W-nav-2">
+        <a href="#" style="color: #23b694">房小二</a>
+    </div>
+    <div class="col xs-1 sm-1 md-1 lg-1 xl-1 text-center W-nav-2" >
+        <a href="./../personInfo/personInfo.html">个人中心</a>
+    </div>
+    <div class="col xs-3 sm-2 md-3 lg-3 xl-3" style="padding-left: 20%;padding-top: 1.3%">
+        <a href="#" style="font-size: 18px;color: #20A889;font-weight: 600">登录</a>
+    </div>
+</div>
+
+
+<!--图和提问框-->
+    <div class="banner" >
+        <div class="backgroundC row" >
+            <!--<div class="">-->
+                <div class="col xs-7 sm-7 md-7 lg-7 xl-7 padding-left-7" >
+                    <img src="../../images/fangXiaoEr/Wpart1/waiter.png"  height="100%">
+                </div>
+
+                <div class="col xs-5 sm-5 md-5 lg-5 xl-5" style="padding-top: 20px;padding-bottom: 20px">
+                    <div class="W-form" >
+                        <div class="row text-center">
+                            <div class="col xs-12 sm-12 md-12 lg-12 xl-12 lg-12 W-form-title padding-top-6">房小二在线留言</div>
+                        </div>
+                        <div class="row padding-top-7">
+                            <div class="col xs-2 sm-2 md-2 lg-2 xl-2 lg-2 padding-left-4 padding-top-4">
+                                <span >姓名</span>
+                            </div>
+                            <div class="col xs-9 sm-9 md-9 lg-9 xl-9 lg-9" style="background-color:  #F5F5F5;padding-left: 5px">
+                                <input type="text" class="W-form-input1" >
+                            </div>
+                            <div class="col xs-1 sm-1 md-1 lg-1 xl-1 lg-9"></div>
+                        </div>
+                        <div class="row padding-top-3">
+                            <div class="col xs-2 sm-2 md-2 lg-2 xl-2 lg-2 padding-left-4 padding-top-4">
+                                <span>手机</span>
+                            </div>
+                            <div class="col xs-9 sm-9 md-9 lg-9 xl-9 lg-9" style="background-color:  #F5F5F5;padding-left: 5px">
+                                <input type="text" class="W-form-input2" >
+                            </div>
+                            <div class="col xs-1 sm-1 md-1 lg-1 xl-1 lg-1"></div>
+                        </div>
+<!--调试到此处-->
+                        <div class="row padding-top-3">
+                            <div class="col xs-2 sm-2 md-2 lg-2 xl-2 lg-2 padding-left-4 padding-top-3">
+                                <span>意向</span>
+                            </div>
+                            <div class="col xs-4 sm-4 md-4 lg-4 xl-4 lg-4" style="margin-left: 2%">
+                                <button class="width-100 W-form-btn1" id="mywant01">我想卖房</button>
+                            </div>
+                            <div class="col xs-4 sm-4 md-4 lg-4 xl-4 lg-4" style="margin-left: 5%">
+                                <button class="width-100 W-form-btn2" id="mywant02">我想买房</button>
+                            </div>
+                            <div class="col xs-1 sm-1 md-1 lg-1 xl-1 lg-1"></div>
+                        </div>
+
+
+
+                        <div class="row padding-top-3">
+                            <div class="col xs-2 sm-2 md-2 lg-2 xl-2 lg-2 padding-left-4" style="padding-top: 2%">
+                                <span>内容</span>
+                            </div>
+                            <div class="col  xs-9 sm-9 md-9 lg-9 xl-9 lg-9" style="background-color:  #F5F5F5;padding-left: 5px">
+                                <textarea class="font-size-14 border-none W-form-textarea" ></textarea>
+                            </div>
+                            <div class="col xs-1 sm-1 md-1 lg-1 xl-1 lg-1"></div>
+                        </div>
+
+                        <div class="row">
+                            <!--<div class="col lg-2"></div>-->
+                            <div class="col  xs-9 sm-9 md-9 lg-9 xl-9 lg-9 padding-top-3" style="margin-left: 17%">
+                                <button class="width-100 color-white W-form-btn3" >提交问题</button>
+                            </div>
+                            <div class="col xs-1 sm-1 md-1 lg-1 xl-1 lg-1"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col xs-12 sm-12 md-12 lg-12 xl-12 lg-12 padding-top-3 width-100 W-form-bottom">
+                                *提交问题后，房小二会尽快与您联系！
+                            </div>
+                        </div>
+
+                        <!--<div class="" style="height:1px;background-color: gainsboro"></div>-->
+<!--
+                        <div class="row padding-top-4" >
+                            <div class="col xs-10 sm-10 md-10 lg-10 xl-10 lg-10 width-100 text-center W-form-bottom2" >
+                                服务热线：400-013-2229 （周一至周日 9:00-19:30）
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+        </div>
+    </div>
+
+<!--免费基础服务-->
+<!--<div>-->
+    <div class="row">
+        <div class="col xs-12 sm-12 md-12 lg-12 xl-12 free-server-title" >
+            免费基础服务
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col xs-12 sm-12 md-12 lg-12 xl-12 free-server-title1">
+            基础服务<span class="color-green1">全面升级</span>
+        </div>
+    </div>
+
+<!--卖家、买家-->
+    <div class="width-100">
+        <div class="float-left bg-white color-white plus_css1" >1</div>
+        <div class="float-left plus_css2" >
+            <div class="float-left">
+                <img src="../../images/fangXiaoEr/left-icon/buy_ico.png">
+            </div>
+            <div class="float-left free-left-div">
+                <table class="color-white" style="margin: 15% 0 4% 0">
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/left-icon/111.png" alt="">
+                        </td>
+                        <td>专业购房指导</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/left-icon/222.png" alt="">
+                        </td>
+                        <td>购房能力评估</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/left-icon/333.png" alt="">
+                        </td>
+                        <td>房产知识咨询</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/left-icon/444.png" alt="">
+                        </td>
+                        <td>购房费用计算</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/left-icon/555.png" alt="">
+                        </td>
+                        <td>预约成交过户</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="float-left bg-white color-white" style="width: 2%">1</div>
+            <div class="float-left">
+                <img src="../../images/fangXiaoEr/right-icon/seller_ico.png">
+            </div>
+            <div class="free-right-div">
+                <table class="free-right-table">
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/right-icon/1.jpg" alt="">
+                        </td>
+                        <td>上传照片</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/right-icon/2.jpg" alt="">
+                        </td>
+                        <td>协助发布</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/right-icon/3.jpg" alt="">
+                        </td>
+                        <td>上门拍照</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/right-icon/4.jpg" alt="">
+                        </td>
+                        <td>房产咨询</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/right-icon/5.jpg" alt="">
+                        </td>
+                        <td>房源估价</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="free-right-div">
+                <table class="free-right-table2">
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/right-icon/6.jpg" alt="">
+                        </td>
+                        <td>房源推广</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/right-icon/7.jpg" alt="">
+                        </td>
+                        <td>钥匙托管</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/right-icon/1.jpg" alt="">
+                        </td>
+                        <td>预约全景</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/right-icon/9.jpg" alt="">
+                        </td>
+                        <td>费用计算</td>
+                    </tr>
+                    <tr>
+                        <td class="free-icon">
+                            <img src="../../images/fangXiaoEr/right-icon/10.jpg" alt="">
+                        </td>
+                        <td>预约成交</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<!--房小二增值业务-->
+<div class="row">
+    <div class="col xs-12 sm-12 md-12 lg-12 xl-12 free-server-title" >
+        房小二增值服务
+    </div>
+</div>
+
+<div class="row">
+    <div class="col xs-12 sm-12 md-12 lg-12 xl-12 free-server-title1" >
+        房小二<span class="color-green1">增值服务</span>会收取少量费用，可<span class="color-green1">自主选择</span>
+    </div>
+</div>
+
+<!--买房困惑-->
+<div class="width-100">
+    <div class="money-left-content">
+        <div class="money-left-img">
+            <img src="../../images/fangXiaoEr/help/help1.png">
+        </div>
+        <div class="money-left-div">
+            <p class="money-left-title">买房困惑</p>
+            <p class="money-left-text">合适房源找不到</p>
+                <p class="money-left-text money-left-text-top" >房东价格谈不拢？</p>
+            <p class="money-left-text money-left-text-top">过户流程太繁琐？</p>
+        </div>
+    </div>
+</div>
+<!--房小二解决-->
+<div class="width-100">
+    <div class="help-content" >
+        <div class="help-er-text">
+            <p class="help-er2-title">
+                房小二帮助
+            </p>
+            <p class="bg-white">
+                <img src="../../images/fangXiaoEr/help/right.png" class="help-er"> 全城房源推荐，更高效
+            </p>
+            <p class="help-img">
+                <img src="../../images/fangXiaoEr/help/right.png" class="help-er1">交易磋商议价，更实惠
+            </p>
+            <p class="help-img">
+                <img src="../../images/fangXiaoEr/help/right.png" class="help-er1">小二全程代办，更省心
+            </p>
+        </div>
+        <div class="help-er-ren2">
+            <img src="../../images/fangXiaoEr/help/help2.png" >
+        </div>
+    </div>
+
+</div>
+<!--真二网为您提供-->
+<div class="row">
+    <div class="col xs-12 sm-12 md-12 lg-12 xl-12 for-title" >
+        真二网为您提供
+    </div>
+</div>
+
+<div class="row margin-auto" style="width: 80%">
+    <div class="col xs-3 sm-3 md-3 lg-3 xl-3" style="margin-left: 5%">
+        <p class="for-text-title">签约服务</p>
+        <img src="../../images/fangXiaoEr/server/1.jpg" class="width-100">
+        <p class="for-text">
+            由真二网作为此二手房交易的居间方，为买卖双方在合同签订过程中提供专业的咨询和见证。
+        </p>
+    </div>
+
+    <div class="col xs-1 sm-1 md-1 lg-1 xl-1 bg-white color-white">0</div>
+
+    <div class="col xs-3 sm-3 md-3 lg-3 xl-3">
+        <p class="for-text-title">银行贷款申请服务</p>
+        <img src="../../images/fangXiaoEr/server/2.jpg" class="width-100">
+        <p class="for-text">
+            由真二网在相应的银行代办此房屋的贷款申请手续。
+        </p>
+    </div>
+
+    <div class="col xs-1 sm-1 md-1 lg-1 xl-1 bg-white color-white">0</div>
+
+    <div class="col xs-3 sm-3 md-3 lg-3 xl-3">
+        <p class="for-text-title">代办过户服务</p>
+        <img src="../../images/fangXiaoEr/server/3.jpg" class="width-100">
+        <p class="for-text">
+            由真二网人员在房管局代办此房屋的过户手续。
+        </p>
+    </div>
+</div>
+
+<!--二手房过户费用对比-->
+<div class="row">
+    <div class="col xs-12 sm-12 md-12 lg-12 xl-12 old-title" >
+        二手房过户费用对比
+    </div>
+</div>
+<div class="bg-img-dai">
+    <img src="../../images/fangXiaoEr/zz.png" alt="">
+</div>
+
+<!--地图-->
+<!--part 5-->
+<!--part 5-->
+<div class="row">
+    <div class="col  xs-12 sm-12 md-12 lg-12 xl-12 home_part5_base">
+
+        <img src="./../../images/home/part5/mapBg-zz.png" class="home_part5_bg"/>
+        <div  class="home_part5_posi">
+            <div class="home_part5_posi_p" style="margin-bottom: 10px"> <span class="home_part5_posi_p_span">真二网签约中心</span>全城覆盖</div>
+            <div style="padding-left: 8%;padding-top: 1%">
+                <img src="./../../images/home/part5/map-city-zz.png" class="home_part5_posi_img"/>
+            </div>
+
+            <img src="./../../images/home/part5/map_posi.png"   class="position1 map_img"/>
+            <img src="./../../images/home/part5/map_posi.png"  class="position2 map_img"/>
+            <img src="./../../images/home/part5/map_posi.png"  class="position3 map_img"/>
+            <img src="./../../images/home/part5/map_posi.png"  class="position4 map_img"/>
+            <img src="./../../images/home/part5/map_posi.png"  class="position5 map_img"/>
+            <img src="./../../images/home/part5/map_posi.png"  class="position6 map_img"/>
+            <img src="./../../images/home/part5/map_posi.png" class="position7 map_img"/>
+            <img src="./../../images/home/part5/map_posi.png"  class="position8 map_img"/>
+        </div>
+
+    </div>
+</div>
+
+<!--热线-->
+<div class="hot-tel">
+    <img src="../../images/fangXiaoEr/tel.png">
+</div>
+
+<!--过户流程-->
+<div class="row">
+    <div class="col xs-12 sm-12 md-12 lg-12 xl-12 little-icon-title" >
+        过户流程
+    </div>
+</div>
+<div class="little-icon-content">
+    <div class="row text-center font-size-14" style="color: #323232">
+        <div class="col xs-1 sm-1 md-1 lg-1 xl-1">
+            <img src="../../images/fangXiaoEr/W-foot-icon/foot1.png" alt="">
+            <p class="little-icon-top">解除租赁</p>
+        </div>
+        <div class="col xs-1 sm-1 md-1 lg-1 xl-1">
+            <img src="../../images/fangXiaoEr/W-foot-icon/foot2.png" alt="">
+            <p class="little-icon-top">卖方赎楼</p>
+        </div>
+        <div class="col xs-1 sm-1 md-1 lg-1 xl-1">
+            <img src="../../images/fangXiaoEr/W-foot-icon/foot3.png" alt="">
+            <p class="little-icon-top">意向合同</p>
+        </div>
+        <div class="col xs-1 sm-1 md-1 lg-1 xl-1">
+            <img src="../../images/fangXiaoEr/W-foot-icon/foot4.png" alt="">
+            <p class="little-icon-top">资格审查</p>
+        </div>
+        <div class="col xs-1 sm-1 md-1 lg-1 xl-1">
+            <img src="../../images/fangXiaoEr/W-foot-icon/foot5.png" alt="">
+            <p class="little-icon-top">产权检验</p>
+        </div>
+        <div class="col xs-1 sm-1 md-1 lg-1 xl-1">
+            <img src="../../images/fangXiaoEr/W-foot-icon/foot6.png" alt="">
+            <p class="little-icon-top">房屋评估</p>
+        </div>
+        <div class="col xs-1 sm-1 md-1 lg-1 xl-1">
+            <img src="../../images/fangXiaoEr/W-foot-icon/foot7.png" alt="">
+            <p class="little-icon-top">申请贷款</p>
+        </div>
+        <!--<div class="col">-->
+        <!--<img src="../images/W-foot-icon/foot8.png" alt="">-->
+        <!--<p>网上签约</p>-->
+        <!--</div>-->
+        <div class="col xs-1 sm-1 md-1 lg-1 xl-1">
+            <img src="../../images/fangXiaoEr/W-foot-icon/foot9.png" alt="">
+            <p class="little-icon-top">办理缴税</p>
+        </div>
+        <div class="col xs-1 sm-1 md-1 lg-1 xl-1">
+            <img src="../../images/fangXiaoEr/W-foot-icon/foot10.png" alt="">
+            <p class="little-icon-top">办理过户</p>
+        </div>
+        <div class="col xs-1 sm-1 md-1 lg-1 xl-1">
+            <img src="../../images/fangXiaoEr/W-foot-icon/foot11.png" alt="">
+            <p class="little-icon-top">物业交割</p>
+        </div>
+        <div class="col xs-1 sm-1 md-1 lg-1 xl-1">
+            <img src="../../images/fangXiaoEr/W-foot-icon/foot12.png" alt="">
+            <p class="little-icon-top">抵押登记</p>
+        </div>
+        <!--领证交房-->
+    </div>
+</div>
+
+
+
+<div class="row footer_copy">
+    <div class="col xs-12 sm-12 md-12 lg-12 xl-12 ">
+        <div class="f_p1">
+            <ul class="f_p_ul">
+                <li>关于我们</li>
+                <li>服务条款</li>
+                <li>真二招聘</li>
+                <li>版权声明</li>
+                <li> 投诉建议邮箱:ceo@zhen22.com</li>
+                <li style="border-right: solid 0px"> 服务电话：400-013-2229（周一至周日 9：00-19：30）</li>
+            </ul>
+        </div>
+
+        <p class="f_p2">
+            Copyright@2014 - 2017 Real Second Hand.All Rigts Reserved
+        </p>
+        <p class="f_p3">
+            真二（深圳）房产经纪有限公司版权所有
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

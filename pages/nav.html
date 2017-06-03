@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<div id="div1"></div>
+<script type="text/javascript">
+    let div=document.querySelector("#div1");
+    let xmlhttp;
+    if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=()=>
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            let result=xmlhttp.responseText;
+
+
+        }
+    }
+    xmlhttp.open("GET","./../data/houses.json",true);
+    xmlhttp.send();
+
+</script>
+
+
+</body>
+</html>

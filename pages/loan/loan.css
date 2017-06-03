@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+}
+/*banner*/
+.loan_banner{
+    background-image: url("./../../images/loan/banner.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.loan_banner_posi{
+    padding-right: 15%;
+
+}
+.banner_form{
+    background-color: rgba(0, 0, 0, 0.56);
+    height: 100%;
+    width: 24%;
+    float: right;
+    padding-top: 2%;
+    padding-bottom:2%;
+}
+@media (max-width: 1200px){
+    .banner_form{
+        width: 30%;
+    }
+    .loan_banner_posi{
+        padding-right: 7%;
+
+    }
+}
+@media (max-width: 1000px){
+    .banner_form{
+        width:38%;
+    }
+    .loan_banner_posi{
+        padding-right: 0px;
+
+    }
+}
+.banner_form_title{
+    text-align: center;
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+.banner_form_input_posi{
+    display: flex;
+    flex-direction: row;
+    margin-top:10%;
+    color: white;
+    font-size: 17px;
+}
+.banner_form_input{
+    width:60%;
+    background-color: white;
+    height: 35px;
+    margin-left:5%;
+    border-radius: 5px;
+    padding-left: 3%;
+    line-height: 35px;
+}
+.banner_name{
+    line-height: 35px;
+    margin-left: 5%;
+}
+._money_posi{
+    position: relative;
+}
+
+._money{
+    border-radius: 5px;
+   position: absolute;
+    right: 0px;
+    display: inline-block;
+    padding:0px 12px;
+    background-color: rgba(225, 225, 225, 0.84);
+    top: 0px;
+    font-size: 13px;
+    color: black;
+}
+.loan_form_btn{
+    width: 80%;
+    margin: auto;
+    background-color: #009B78;
+    margin-top: 7%;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+.loan_form_btn:hover{
+    background-color: #008365;
+    cursor: default;
+}
+/*part1*/
+.loan_part1_base{
+    width: 75%;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 15px;
+}
+.loan_part1_row1{
+    display: flex;
+    flex-direction: row;
+}
+.loan_part1_row1_icon1{
+    width: 30%;
+    background-color: #F8F8F8;
+    padding:2% 2%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 3%;
+}
+.loan_part1_row1_icon1_p1{
+    font-size: 25px;
+    color: #888888;
+}
+.loan_part1_row1_icon1_p{
+    padding-left: 10%;
+    width: 100%;
+}
+.loan_part1_row1_icon1_p1 span{
+    color: #009B78;
+    font-size:33px;
+}
+.loan_part1_row1_icon1_p2{
+    color: #636363;
+    font-size: 17px;
+    margin-top: 10%;
+}
+
+.loan_part1_row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+    margin-top:3%;
+    margin-bottom: 2%;
+    width:96%;
+
+}
+
+.part2_rows{
+
+}
+@media (max-width: 1200px){
+    .loan_part1_base{
+        width: 100%;
+        padding-left: 2%;
+    }
+    .loan_part1_row2{
+        width: 97%;
+    }
+    .loan_part1_row1{
+        justify-content: space-between;
+    }
+}
+
+
+
+/*part2*/
+.loan_part2_base{
+    width: 100%;
+    background-color: #F8F8F8;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.plus_part2{
+    width: 100%;
+    background-color: #F8F8F8;
+    padding-top: 3%;
+}
+.loan_part2_posi{
+    width: 74%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.loan_part2_icon1{
+    width: 22%;
+    background-color: white;
+    padding: 2%;
+    margin-right: 3%;
+}
+.part_icon1_title{
+    display: flex;
+    flex-direction: row;
+}
+.mid_ico1_content{
+    padding-left: 4%;
+    width: 100%;
+}
+.mid_ico1_content_p1{
+    font-size: 19px;
+    margin-bottom: 3%;
+}
+.mid_ico1_content p span{
+    font-size: 13px;
+    color: #a8a8a8;
+}
+.part_icon1_money{
+    padding-top: 20%;
+    padding-bottom: 25%;
+}
+.part_icon1_money>p:nth-child(2){
+    font-size: 29px;
+    color: #f50000;
+    margin-top: 8%;
+}
+.part_icon1_description{
+    font-size: 14px;
+    color: #5d5d5d;
+}
+.part_icon1_description>p:nth-child(1){
+    margin-bottom: 5%;
+}
+.part_icon1_btn{
+    width: 90%;
+    margin: auto;
+    color: white;
+    background-color: #009B78;
+    margin-top: 10%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+.part_icon1_btn:hover{
+    cursor: default;
+}
+/* part2 hover*/
+.part2_hover_posi{
+    position: relative;
+}
+.part2_hidde_posi{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.part2_hidde_posi>div:nth-child(1){
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.part2_hidde_posi>div:nth-child(2){
+    color: gray;
+    letter-spacing: 2px;
+}
+
+.part2_show_posi{
+    transform: rotateY(0deg);
+}
+.part2_hidde_posi{
+    transform: rotateY(-90deg);
+}
+.part2_hover_posi:hover{
+    cursor: default;
+}
+.part2_hover_posi:hover .part2_show_posi{
+    transform: rotateY(-90deg);
+}
+.part2_hover_posi:hover .part2_hidde_posi{
+    transform: rotateY(0deg);
+}
+
+@media (max-width: 1200px){
+    .loan_part2_posi{
+        padding-left: 3%;
+        width: 100%;
+        margin: auto;
+    }
+
+
+}
+
+@media (max-width: 1000px) {
+    .loan_part2_posi{
+        flex-wrap: wrap;
+    }
+    .loan_part2_icon1{
+        width:47%;
+        margin: auto;
+        background-color: white;
+        padding: 2%;
+        margin-right: 3%;
+        margin-top:20px;
+    }
+    .part_icon1_money{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+/*part3*/
+.loan_part3-base{
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+.loan_part3-base h2{
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 3%;
+
+}
+/*part4*/
+.loan_part4{
+    width: 100%;
+    margin-top: 3%;
+}
+.loan_part4_img{
+    width: 100%;
+    height: auto;
+}
+
+
